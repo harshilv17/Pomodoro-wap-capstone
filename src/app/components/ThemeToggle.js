@@ -57,7 +57,7 @@ export default function ThemeToggle() {
 
   return (
     <button onClick={toggleTheme} style={{ marginRight: '1rem' }}>
-      {theme === 'light' ? '🌞 Light' : '🌚 Dark'}
+      {theme === 'light' ? 'Light' : 'Dark'}
     </button>
   );
 } 
