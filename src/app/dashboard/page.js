@@ -1,11 +1,10 @@
 "use client";
-import Planner from "../components/Planner";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../components/AuthProvider";
 
-export default function PlannerPage() {
-  const { loggedIn } = useAuth();
+export default function DashboardPage() {
+  const { loggedIn, user } = useAuth();
   const router = useRouter();
   useEffect(() => {
     if (!loggedIn) {
@@ -13,5 +12,10 @@ export default function PlannerPage() {
     }
   }, [loggedIn, router]);
   if (!loggedIn) return null;
-  return <Planner />;
-}
+  return (
+    <div className="auth-container">
+      <h2>Welcome, {user}!</h2>
+      <p>This is your dashboard.</p>
+    </div>
+  );
+} 

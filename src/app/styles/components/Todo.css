@@ -36,3 +36,19 @@
   background-color: #b91c1c;
   transform: none;
 }
+
+.auth-links a, .auth-links button {
+  background: #f3f4f6;
+  color: #1f2937;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.auth-links a:hover, .auth-links button:hover {
+  background: #e5e7eb;
+}

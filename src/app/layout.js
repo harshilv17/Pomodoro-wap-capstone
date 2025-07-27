@@ -1,5 +1,7 @@
 import "./globals.css";
 import Link from "next/link";
+import AuthNav from "./components/AuthNav";
+import AuthProvider from "./components/AuthProvider";
 
 export default function RootLayout({ children }) {
   return (
@@ -11,8 +13,11 @@ export default function RootLayout({ children }) {
             <Link href="/todo">To-Do List</Link>
             <Link href="/pomodoro">Pomodoro</Link>
             <Link href="/planner">Planner</Link>
+            <AuthNav />
           </nav>
-          <div className="content">{children}</div>
+          <div className="content">
+            <AuthProvider>{children}</AuthProvider>
+          </div>
         </div>
       </body>
     </html>
