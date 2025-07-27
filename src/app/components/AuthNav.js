@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import ThemeToggle from "./ThemeToggle";
 
 export default function AuthNav() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -26,7 +25,6 @@ export default function AuthNav() {
 
   return (
     <div className="auth-links">
-      <ThemeToggle />
       {loggedIn ? (
         <>
           <Link href="/dashboard">Dashboard</Link>

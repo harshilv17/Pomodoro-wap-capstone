@@ -10,7 +10,7 @@ const themes = {
     '--button-hover': '#B45309',
     '--border': '#E5E7EB',
     '--nav-bg': '#FAF9F6',
-    '--nav-link': '#FFFFFF',
+    '--nav-link': '#1E1E1E',
     '--nav-link-hover': '#D97706',
   },
   dark: {
